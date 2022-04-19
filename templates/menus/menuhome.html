@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MrJims.Pizza</title>
+        <link rel="icon" href="/attachments/mrjimdotpizza.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/app.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="/"><img src="/attachments/mrjimdotpizza.png" height="68.36px" width="128.21px" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/templates/menus/menuhome.html">Locations & Menus</a></li>
+                    <li><a href="/templates/ingredients.html">Ingredients</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Gifts</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Check In</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="https://app.mrjims.pizza">Place Order</a>
+            <p class="menu cta">MENU</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="https://app.mrjims.pizza">Place Order</a>
+                <a href="/templates/menus/menuhome.html">Locations & Menus</a>
+                <a href="/templates/ingredients.html">Ingredients</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Gifts</a>
+                <a href="#">Coupons</a>
+                <a href="#">Check In</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+        <div class="container">
+            <h2 id="title">LOCATIONS & MENUS</h2>
+            <input type="text" id="myInput" onkeyup="locationSearch()" placeholder="Search for City" title="Type in a name"><br>
+            <iframe id="map" src="https://www.google.com/maps/d/embed?mid=13wst-TvDrhsK9Yddz4Y42bbuqs6cBiSN&ehbc=2E312F" width="640" height="480"></iframe>
+            <table id="locationTable">
+                <tr class="header">
+                    <th>State</th>
+                    <th>Locations</th>
+                </tr>
+                <tr>
+                    <td>Arkansas</td>
+                    <td>103 W. Smith St. (Brookland)</td>
+                </tr>
+                <tr>
+                    <td>Louisiana</td>
+                    <td>2424 Williams Blvd Suite E (Kenner)</td>
+                </tr>
+                <tr>
+                    <td>North Carolina</td>
+                    <td>1603 West Blvd (Charlotte)</td>
+                </tr>
+                <tr>
+                    <td>Nevada</td>
+                    <td>7181 Hualapai 120 (Las Vegas)</td>
+                </tr>
+                <tr>
+                    <td rowspan="47">Texas</td>
+                    <td>3115 Fall Creek Hwy (Acton)</td>
+                </tr>
+                <tr>
+                    <td>10303 E Bankhead Hwy Suite 101 (Aledo)</td>
+                </tr>
+                <tr>
+                    <td>701 W White Street #3 (Anna)</td>
+                </tr>
+                <tr>                   
+                    <td>2430 N Davis Dr (Arlington)</td>
+                </tr>
+                <tr>
+                    <td>5010 Kelly Elliot Rd (Arlington)</td>
+                </tr>
+                <tr>
+                    <td>5409 S Collins St (Arlington)</td>
+                </tr>
+                <tr>
+                    <td>416 Commerce #3 (Azle)</td>
+                </tr>
+                <tr>
+                    <td>8905 Benbrook Blvd Suite G (Benbrook)</td>
+                </tr>
+                <tr>
+                    <td>477 W Rock Island Ave (Boyd)</td>
+                </tr>
+                <tr>
+                    <td>1140 FM 1189 #112 (Brock)</td>
+                </tr>
+                <tr>
+                    <td>333 SW Wilshire Blvd #B (Burleson)</td>
+                </tr>
+                <tr>
+                    <td>2150 N Josey Ln #238 (Carrollton)</td>
+                </tr>
+                <tr>
+                    <td>241 E FM 1382 #316 (Cedar Hill)</td>
+                </tr>
+                <tr>
+                    <td>8300 Elam Rd. #100 (Dallas)</td>
+                </tr>
+                <tr>
+                    <td>340 E Beltline Rd (DeSoto)</td>
+                </tr>
+                <tr>
+                    <td>670 Big Stone Gap (Duncanville)</td>
+                </tr>
+                <tr>
+                    <td>604 State Highway 78 N (Farmersville)</td>
+                </tr>
+                <tr>
+                    <td>425 Pinson Road #E (Forney)</td>
+                </tr>
+                <tr>
+                    <td>11477 Custer Rd Suite 105 (Frisco)</td>
+                </tr>
+                <tr>
+                    <td>553 West Pioneer Parkway (Grand Prairie)</td>
+                </tr>
+                <tr>
+                    <td>101 FM 156 N (Haslet)</td>
+                </tr>
+                <tr>
+                    <td>526 E Pipeline Rd (Hurst)</td>
+                </tr>
+                <tr>
+                    <td>1215 W Shady Grove Road (Irving)</td>
+                </tr>
+                <tr>
+                    <td>950 Highway 156 #8 (Justin)</td>
+                </tr>
+                <tr>
+                    <td>101 Old Betsy Rd. 4 (Keene)</td>
+                </tr>
+                <tr>
+                    <td>705 S Main St (Keller)</td>
+                </tr>
+                <tr>
+                    <td>1009 West Pleasant Run (Lancaster)</td>
+                </tr>
+                <tr>
+                    <td>800 W Eldorado Pkwy (Little Elm)</td>
+                </tr>
+                <tr>
+                    <td>2840 HWY 157 Suite 124 (Mansfield)</td>
+                </tr>
+                <tr>
+                    <td>1920 Eldorado Pkwy #850 (McKinney)</td>
+                </tr>
+                <tr>
+                    <td>304 W Avenue F (Midlothian)</td>
+                </tr>
+                <tr>
+                    <td>1100 SE 1st St (Mineral Wells)</td>
+                </tr>
+                <tr>
+                    <td>5310 Rufe Snow (North Richland Hills)</td>
+                </tr>
+                <tr>
+                    <td>6225 FM 920 Suite 106 (Peaster)</td>
+                </tr>
+                <tr>
+                    <td>2825 Nall St 18A (Port Neches)</td>
+                </tr>
+                <tr>
+                    <td>205 S Main St #1004 (Red Oak)</td>
+                </tr>
+                <tr>
+                    <td>105 US HWY 287 N Suite #105A (Rhome)</td>
+                </tr>
+                <tr>
+                    <td>500 N Highway 377 #F (Roanoke)</td>
+                </tr>
+                <tr>
+                    <td>1029 N Saginaw Blvd (Saginaw)</td>
+                </tr>
+                <tr>
+                    <td>417 Hwy 199 E #7 (Springtown)</td>
+                </tr>
+                <tr>
+                    <td>6700 Main Street #148 (The Colony)</td>
+                </tr>
+                <tr>
+                    <td>119 Highway 67 (Venus)</td>
+                </tr>
+                <tr>
+                    <td>3926 Willbarger Street (Vernon)</td>
+                </tr>
+                <tr>
+                    <td>401 Highway 77 (Waxahachie)</td>
+                </tr>
+                <tr>
+                    <td>701 Palo Pinto Rd #J (Weatherford)</td>
+                </tr>
+                <tr>
+                    <td>235 N 4th St. (Wills Point)</td>
+                </tr>
+                <tr>
+                    <td>613 Hwy 78 Suite 100 (Wylie)</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Wyoming</td>
+                    <td>4001 Laramie St (Cheyenne)</td>
+                </tr>
+                <tr>
+                    <td>453 Vandehei Ave #180 (Cheyenne)</td>
+                </tr>
+                <tr>
+                    <td>2523 Grand Ave Unit A (Laramie)</td>
+                </tr>
+                <tr>
+                    <td>856 Coffeen Ave (Sheridan)</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
